@@ -1,6 +1,7 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    font-family: 'Press Start 2P', sans-serif; /* Use a fallback font */
   }
   /* Base styles for light and dark modes */
   :root {
@@ -13,3 +14,4 @@ body {
   }
   /* Additional styling for elements */
   /* ... */
+  /*h1, h2, h3 {  font-family: 'Press Start 2P', sans-serif;}*/
