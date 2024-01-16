@@ -17,6 +17,7 @@ body {
     --text-color: #ddd; /* Dark mode text color */
   }
   .footer { 
+    font-size: 11px;
     position: absolute; 
     bottom: 0; 
     left: 0; 
