@@ -2,6 +2,10 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'Press Start 2P', sans-serif; /* Use a fallback font */
+    background-image: url('pixelForest.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
   /* Base styles for light and dark modes */
   :root {
