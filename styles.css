@@ -1,6 +1,4 @@
 body {
-    position: relative;
-    top: 380px;
     text-align: center;
     background-color: var(--bg-color);
     color: var(--text-color);
