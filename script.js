@@ -13,9 +13,13 @@ function toggleTheme() {
   const now = new Date().getHours();
   const isNight = now >= 18 || now <= 6; // Adjustable time range for dark mode
 
-  if (isNight && !isDarkMode || !isNight && isDarkMode) {
+  if (isNight != isDarkMode){
     root.classList.toggle('dark-mode');
   }
+}
+
+function placeArrow() { //placeholder for function that wil place arrow in front of Play, Settings, Credits, or Quit depending on which was hovered last
+  return;
 }
 
 // Initial theme setup
