@@ -18,9 +18,31 @@ function toggleTheme() {
   }
 }
 
-function placeArrow() { //placeholder for function that wil place arrow in front of Play, Settings, Credits, or Quit depending on which was hovered last
-  return;
+function moveIconBeforeLastHoveredLink() {
+  const links = document.querySelectorAll("header a");
+  let lastHoveredLink = null;
+
+  links.forEach(link => {
+    link.addEventListener("mouseover", () => {
+      lastHoveredLink = link;
+    });
+
+    link.addEventListener("mouseout", () => {
+      if (lastHoveredLink === link) {
+        lastHoveredLink = null;
+      }
+    });
+  });
+
+  document.addEventListener("mousemove", () => {
+    if (lastHoveredLink) {
+      const icon = lastHoveredLink.parentNode.querySelector("i");
+      lastHoveredLink.parentNode.insertBefore(icon, lastHoveredLink);
+    }
+  });
 }
+
+moveIconBeforeLastHoveredLink();
 
 // Initial theme setup
 toggleTheme();
