@@ -1,4 +1,4 @@
-const root = document.documentElement;
+/*const root = document.documentElement;
 
 function toggleTheme() {
   const isDarkMode = root.classList.toggle('dark-mode');
@@ -18,34 +18,8 @@ function toggleTheme() {
   }
 }
 
-function moveIconBeforeLastHoveredLink() {
-  const links = document.querySelectorAll("header a");
-  let lastHoveredLink = null;
-
-  links.forEach(link => {
-    link.addEventListener("mouseover", () => {
-      lastHoveredLink = link;
-    });
-
-    link.addEventListener("mouseout", () => {
-      if (lastHoveredLink === link) {
-        lastHoveredLink = null;
-      }
-    });
-  });
-
-  document.addEventListener("mousemove", () => {
-    if (lastHoveredLink) {
-      const icon = lastHoveredLink.parentNode.querySelector("i");
-      lastHoveredLink.parentNode.insertBefore(icon, lastHoveredLink);
-    }
-  });
-}
-
-moveIconBeforeLastHoveredLink();
-
 // Initial theme setup
 toggleTheme();
 
 // Respect user preference if available
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', toggleTheme);
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', toggleTheme);*/
