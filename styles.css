@@ -30,14 +30,20 @@ body {
 				 1px -1px 0 #000,
 				-1px -1px 0 #000;
   }*/
+  .wrapper {
+    height:100vh;
+  }
   header p {
     margin-left: -2em;
   }
   header {
-    position: relative;
-    top: 450px;
-    left: -35px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    /* align-items: center; */
+
+    /* text-align: center; */
   }
   .footer { 
     text-align: left;
