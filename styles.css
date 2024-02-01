@@ -7,7 +7,7 @@ body {
           1px -1px 0 #000,
           -1px -1px 0 #000; /*var(--txt-shadow);*/
     font-family: 'Press Start 2P', sans-serif; /* Use a fallback font */
-    background-image: url('pixelForest.png');
+    background-image: url('Background.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
