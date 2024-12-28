@@ -3,48 +3,81 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/83300aa9ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mediaqueries.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+    </style>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Scott Mesdjian</h1>
-        <h3>Main Menu</h3>
-        <p>
-          <a target="_blank" href="https://scottmez.itch.io">
-            <i class="fa-solid fa-play" style="color: #ffffff;"></i> 
-            Play
-          </a>
-        </p>
-        <p>
-          <a target="_blank" href="https://github.com/scottmez/scottmez.github.io">
-            <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-            Settings
-          </a>
-        </p>
-        <p>
-          <a target="_blank" href="https://github.com/scottmez">
-            <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-            Credits
-          </a>
-        </p>
-        <p>
-          <a href="desktop.html">
-            <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-            Quit
-          </a>
-        </p>  
-      </header>
-
-      <div class="footer">
-        <p><small>Artwork created by Eder Muniz</small></p>
-        <p><small>This project is maintained by <a href="https://github.com/scottmez">Scott Mesdjian</a></small></p>
-        <p><small>Hosted on GitHub Pages</small></p>
+    <nav id="desktop-nav">
+      <div class="logo">Scott Mesdjian</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Scott Mesdjian</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Scott Mesdjian Profile Picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Scott Mesdjian</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button 
+            class="btn btn-color-2" 
+            onclick="window.open('./assets/Resume 2024 Programmer (2).pdf')">
+            Download CV
+          </button>
+          <button 
+            class="btn btn-color-1" 
+            onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" 
+          alt="My LinkedIn profile"
+          class="icon" 
+          onclick="location.href='https://www.linkedin.com/in/scott-mesdjian/'">
+
+          <img src="./assets/github.png" 
+          alt="My Github profile"
+          class="icon" 
+          onclick="location.href='https://github.com/scottmez'">
+
+          <img src="./assets/itch.png"
+          alt="My Itch profile"
+          class="icon"
+          onclick="location.href='https://itch.io/profile/scottmez'">
+
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
