@@ -82,9 +82,10 @@
         gap: 0.5rem;
         text-align: center;
     }
-    .section__pic-container {
-        width: auto;
+    .section__pic-container,
+    .headshot {
         height: 46vw;
+        width: 46vw;
         justify-content: center;
     }
     .section__text__p2 {
