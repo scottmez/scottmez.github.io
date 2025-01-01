@@ -22,6 +22,7 @@
     #profile, 
     .section-container {
         display: block;
+        height: auto;
     }
     .arrow {
         display: none;
@@ -33,13 +34,20 @@
     section {
         margin: 0 5%;
     }
-    .section__pic-container {
+    .section__pic-container,
+    .headshot {
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
     }
     .about-containers {
         margin-top: 0;
+    }
+    .text-container {
+        text-align: center;
+    }
+    .section-container {
+        height: auto;
     }
 }
 
@@ -94,10 +102,4 @@
     .title {
         font-size: 2rem;
     }
-    .text-container {
-        text-align: justify;
-    }
-
-
-
 }
