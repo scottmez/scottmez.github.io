@@ -363,6 +363,8 @@ section {
   flex-direction: column;
 }
 
+
+
 .article-container {
   display:flex;
   text-align: initial;
@@ -370,6 +372,14 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mb-7 {
+  margin-bottom: 7rem;
 }
 
 article {
